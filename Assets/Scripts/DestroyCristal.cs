@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EndPoint : MonoBehaviour
+public class DestroyCristal : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer _renderer;
 

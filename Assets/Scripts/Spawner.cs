@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private Enemy _enemyPrefab;
+    [SerializeField] private Enemy _prefab;
     [SerializeField] private float _delay;
     [SerializeField] Transform[] _spawnPoints;
 
@@ -20,7 +20,7 @@ public class Spawner : MonoBehaviour
         while (true)
         {
             int spawnPointNumber = Random.Range(0, _spawnPoints.Length);
-            Instantiate(_enemyPrefab, _spawnPoints[spawnPointNumber]);
+            Instantiate(_prefab, _spawnPoints[spawnPointNumber]);
             yield return wait;
         }
     }
